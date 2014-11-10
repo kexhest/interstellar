@@ -1,0 +1,26 @@
+{
+	"node": true,
+	"browser": true,
+	"bitwise": false,
+	"esnext": true,
+	"eqeqeq": true,
+	"immed": true,
+	"newcap": true,
+	"regexp": true,
+	"plusplus": false,
+	"noarg": true,
+	"undef": true,
+	"strict": true,
+	"indent": 2,
+	"quotmark": "single",
+	"unused": false,
+	"trailing": true,
+	"smarttabs": true,
+	"globals": {
+		"module": true,
+		"define": true,
+		"require": true,
+		"alert": true,
+		"console": true
+	}
+}
