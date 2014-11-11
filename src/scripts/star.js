@@ -5,7 +5,7 @@ var sprintf = require('sprintf-js').sprintf;
 
 var VELOCITY_MODIFIER = 0.04;
 var RADIUS = 1.6;
-var COLOR = 'rgba(255,255,255,%s)';
+var COLOR = 'rgba(255,255,187,%s)';
 var LIFETIME = 4000;
 var COOL_DOWN = 1000;
 

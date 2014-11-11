@@ -6,7 +6,7 @@ var sprintf = require('sprintf-js').sprintf;
 var MAX_DISTANCE = 120;
 var NORM_DISTANCE = 80;
 var WIDTH = 0.25;
-var COLOR = 'rgba(255,255,255,%s)';
+var COLOR = 'rgba(255,255,187,%s)';
 
 function Interstellar () {
   this._ctx = null;
