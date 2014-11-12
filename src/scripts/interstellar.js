@@ -22,6 +22,7 @@ Interstellar.prototype.draw = function(stars) {
   var gradient = null;
   var startColor = null;
   var endColor = null;
+  var opacityModifier = null;
 
   for (var i = 0; i < connections.length; i++) {
     connection = connections[i];
@@ -32,8 +33,6 @@ Interstellar.prototype.draw = function(stars) {
 
     gradient = this._ctx.createLinearGradient(connection.start.x, connection.start.y,
       connection.end.x, connection.end.y);
-
-    var opacityModifier = 1;
 
     if (connection.distance > NORM_DISTANCE) {
       opacityModifier = (MAX_DISTANCE - connection.distance) / (MAX_DISTANCE - NORM_DISTANCE);
@@ -54,13 +53,10 @@ Interstellar.prototype.draw = function(stars) {
 
 Interstellar.prototype.getConnections = function(stars) {
   var connections = [];
-
   var starA = null;
   var starB = null;
-
   var start = null;
   var end = null;
-
   var distance = null;
 
   if (stars.length <= 1) { return connections; }

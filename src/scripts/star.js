@@ -57,8 +57,6 @@ Star.prototype.update = function() {
     this._opacity += 0.02;
   }
 
-  // console.log(this._direction);
-
   this._position.x += this._direction.x;
   this._position.y += this._direction.y;
 };
