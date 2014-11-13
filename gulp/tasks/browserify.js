@@ -13,7 +13,7 @@ gulp.task('browserify', ['jshint'], function() {
   var bundler = browserify({
     cache: {},
     packageCache: {},
-    fullPaths: true,
+    fullPaths: false,
     entries: [config.src + '/scripts/index.js'],
     debug: false
   });
